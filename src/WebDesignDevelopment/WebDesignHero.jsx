@@ -8,11 +8,36 @@ import {
 } from "react-icons/fa";
 
 const services = [
-  { id: 1, name: "Website Design & Development", icon: <FaLaptopCode /> },
-  { id: 2, name: "Brand Design", icon: <FaCube /> },
-  { id: 3, name: "Web Design", icon: <FaDesktop /> },
-  { id: 4, name: "Copywriting", icon: <FaPenNib /> },
-  { id: 5, name: "E-Commerce / CMS", icon: <FaBoxOpen /> },
+  {
+    id: 1,
+    name: "Website Design & Development",
+    slug: "website-design-development",
+    icon: <FaLaptopCode />,
+  },
+  {
+    id: 2,
+    name: "Brand Design",
+    slug: "brand-design",
+    icon: <FaCube />,
+  },
+  {
+    id: 3,
+    name: "Web Design",
+    slug: "web-design",
+    icon: <FaDesktop />,
+  },
+  {
+    id: 4,
+    name: "Copywriting",
+    slug: "copywriting",
+    icon: <FaPenNib />,
+  },
+  {
+    id: 5,
+    name: "E-Commerce / CMS",
+    slug: "ecommerce-cms",
+    icon: <FaBoxOpen />,
+  },
 ];
 
 const WebDesignHero = () => {
