@@ -11,7 +11,7 @@ const navigate=useNavigate()
         
         <div onClick={()=>{
             navigate("/contact")
-        }} className="group border border-black/20 rounded-2xl px-16 py-10 flex items-center justify-between cursor-pointer transition hover:border-red-400">
+        }} className="group border border-black/20 rounded-2xl px-16 py-10 flex items-center justify-between cursor-pointer transition hover:border-[#9C0000]">
 
           {/* TEXT */}
           <h2 className="font-heading text-6xl flex items-center gap-4">
@@ -22,11 +22,11 @@ const navigate=useNavigate()
             </span>
 
             {/* Red Dot */}
-            <span className="w-3 h-3 bg-red-600 rounded-full ml-2"></span>
+            <span className="w-3 h-3 bg-[#9C0000] rounded-full ml-2"></span>
           </h2>
 
           {/* ARROW */}
-          <div className="transition-transform duration-300 group-hover:rotate-0 rotate-45 text-red-600">
+          <div className="transition-transform duration-300 group-hover:rotate-0 rotate-45 text-[#9C0000]">
             <FiArrowUpRight size={60} strokeWidth={1.5} />
           </div>
 

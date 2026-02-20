@@ -9,7 +9,7 @@ const WhyNexasoftSection = () => {
         {/* MAIN HEADING */}
         <div className="text-center mb-20">
           <h2 className="font-heading text-6xl leading-tight">
-            Why <span className="text-red-600">Nexasoft</span>?
+            Why <span className="text-[#9C0000]">Nexasoft</span>?
           </h2>
         </div>
 
@@ -71,7 +71,7 @@ const WhyNexasoftSection = () => {
             we’re ready to help you grow.
           </p>
 
-          <button className="group inline-flex items-center gap-3 px-8 py-4 rounded-full border border-red-600 text-red-600 font-body transition hover:bg-red-600 hover:text-white">
+          <button className="group inline-flex items-center gap-3 px-8 py-4 rounded-full border border-[#9C0000] text-[#9C0000] font-body transition hover:bg-[#9C0000] hover:text-white">
             
             TALK NOW
             

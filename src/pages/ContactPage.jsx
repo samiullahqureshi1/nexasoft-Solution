@@ -39,7 +39,7 @@ const ContactPage = () => {
               GET IN TOUCH.
             </button>
 
-            <h2 className="font-heading text-5xl mb-6">
+            <h2 className="font-bold text-5xl mb-6">
               Let’s get in touch.
             </h2>
 
@@ -49,10 +49,10 @@ const ContactPage = () => {
             </p>
 
             <div className="space-y-4 mb-10">
-              <p className="text-red-600 text-3xl font-heading">
+              <p className="text-[#9C0000] text-3xl font-heading">
                 +92 344 1543209
               </p>
-              <p className="text-red-600 text-3xl font-heading">
+              <p className="text-[#9C0000] text-3xl font-heading">
                 +1 562 661 8210
               </p>
             </div>
@@ -62,9 +62,9 @@ const ContactPage = () => {
             </p>
 
             <div className="flex gap-6 text-xl">
-              <FaFacebookF className="hover:text-red-600 cursor-pointer transition" />
-              <FaLinkedinIn className="hover:text-red-600 cursor-pointer transition" />
-              <FaInstagram className="hover:text-red-600 cursor-pointer transition" />
+              <FaFacebookF className="hover:text-[#9C0000] cursor-pointer transition" />
+              <FaLinkedinIn className="hover:text-[#9C0000] cursor-pointer transition" />
+              <FaInstagram className="hover:text-[#9C0000] cursor-pointer transition" />
             </div>
           </div>
 
@@ -77,12 +77,12 @@ const ContactPage = () => {
                 <input
                   type="text"
                   placeholder="Name"
-                  className="border border-black/20 rounded-xl px-4 py-3 focus:outline-none focus:border-red-500 transition"
+                  className="border border-black/20 rounded-xl px-4 py-3 focus:outline-none focus:border-[#9C0000] transition"
                 />
                 <input
                   type="email"
                   placeholder="Email"
-                  className="border border-black/20 rounded-xl px-4 py-3 focus:outline-none focus:border-red-500 transition"
+                  className="border border-black/20 rounded-xl px-4 py-3 focus:outline-none focus:border-[#9C0000] transition"
                 />
               </div>
 
@@ -91,10 +91,10 @@ const ContactPage = () => {
                 <input
                   type="text"
                   placeholder="Phone no"
-                  className="border border-black/20 rounded-xl px-4 py-3 focus:outline-none focus:border-red-500 transition"
+                  className="border border-black/20 rounded-xl px-4 py-3 focus:outline-none focus:border-[#9C0000] transition"
                 />
                 <select
-                  className="border border-black/20 rounded-xl px-4 py-3 focus:outline-none focus:border-red-500 transition"
+                  className="border border-black/20 rounded-xl px-4 py-3 focus:outline-none focus:border-[#9C0000] transition"
                 >
                   <option>Select a service</option>
                   <option>Web Development</option>
@@ -108,20 +108,20 @@ const ContactPage = () => {
               <input
                 type="text"
                 placeholder="Subject"
-                className="w-full border border-black/20 rounded-xl px-4 py-3 focus:outline-none focus:border-red-500 transition"
+                className="w-full border border-black/20 rounded-xl px-4 py-3 focus:outline-none focus:border-[#9C0000] transition"
               />
 
               {/* MESSAGE */}
               <textarea
                 rows="5"
                 placeholder="Message"
-                className="w-full border border-black/20 rounded-xl px-4 py-3 focus:outline-none focus:border-red-500 transition"
+                className="w-full border border-black/20 rounded-xl px-4 py-3 focus:outline-none focus:border-[#9C0000] transition"
               ></textarea>
 
               {/* BUTTON */}
               <button
                 type="submit"
-                className="mt-6 border border-black/30 px-8 py-3 rounded-full hover:bg-black hover:text-white transition"
+                className="mt-6 border border-black/30 px-8 py-3 rounded-full hover:bg-[#9C0000] hover:text-white transition"
               >
                 Let’s Talk
               </button>

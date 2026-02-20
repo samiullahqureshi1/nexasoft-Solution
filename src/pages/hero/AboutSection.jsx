@@ -11,7 +11,7 @@ const AboutSection = () => {
           </p>
 
           <h2 className="font-heading text-4xl leading-tight mb-6">
-            Leading <span className="text-red-600">Software Development</span>
+            Leading <span className="text-[#9C0000]">Software Development</span>
             <br /> Agency Pakistan & US
           </h2>
 
@@ -27,14 +27,14 @@ const AboutSection = () => {
           {/* Stats */}
           <div className="flex gap-16">
             <div>
-              <h3 className="text-3xl font-heading text-red-600">150+</h3>
+              <h3 className="text-3xl font-heading text-[#9C0000]">150+</h3>
               <p className="text-xs tracking-[2px] font-body text-gray-500 mt-2">
                 PROJECTS DELIVERED
               </p>
             </div>
 
             <div>
-              <h3 className="text-3xl font-heading text-red-600">12+</h3>
+              <h3 className="text-3xl font-heading text-[#9C0000]">12+</h3>
               <p className="text-xs tracking-[2px] font-body text-gray-500 mt-2">
                 INDUSTRIES SERVED
               </p>

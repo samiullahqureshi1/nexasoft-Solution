@@ -36,7 +36,7 @@ const ServicesSection = () => {
 
           <div className="flex items-center gap-3 cursor-pointer group">
             <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center group-hover:bg-red-50 transition">
-              <FiArrowUpRight className="text-red-500" />
+              <FiArrowUpRight className="text-[#9C0000]" />
             </div>
             <span className="text-sm tracking-wider font-body">READ MORE</span>
           </div>
@@ -54,7 +54,7 @@ const ServicesSection = () => {
 
           <div className="flex items-center gap-3 cursor-pointer group">
             <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center group-hover:bg-red-50 transition">
-              <FiArrowUpRight className="text-red-500" />
+              <FiArrowUpRight className="text-[#9C0000]" />
             </div>
             <span className="text-sm tracking-wider font-body">READ MORE</span>
           </div>
@@ -72,7 +72,7 @@ const ServicesSection = () => {
 
           <div className="flex items-center gap-3 cursor-pointer group">
             <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center group-hover:bg-red-50 transition">
-              <FiArrowUpRight className="text-red-500" />
+              <FiArrowUpRight className="text-[#9C0000]" />
             </div>
             <span className="text-sm tracking-wider font-body">READ MORE</span>
           </div>
@@ -90,7 +90,7 @@ const ServicesSection = () => {
 
           <div className="flex items-center gap-3 cursor-pointer group">
             <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center group-hover:bg-red-50 transition">
-              <FiArrowUpRight className="text-red-500" />
+              <FiArrowUpRight className="text-[#9C0000]" />
             </div>
             <span className="text-sm tracking-wider font-body">READ MORE</span>
           </div>

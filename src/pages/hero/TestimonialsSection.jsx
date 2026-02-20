@@ -27,7 +27,7 @@ const TestimonialsSection = () => {
 
         {/* LEFT SIDE */}
         <div>
-          <p className="text-xs tracking-[4px] text-gray-500 font-body mb-4 uppercase">
+          <p className="text-xs tracking-[4px] text-[#9C0000] font-body mb-4 uppercase">
             Testimonials
           </p>
 
@@ -45,14 +45,14 @@ const TestimonialsSection = () => {
           <div className="flex gap-12">
             <div>
               <h3 className="text-3xl font-heading">12k</h3>
-              <p className="text-red-600 text-sm font-body mt-2">
+              <p className="text-[#9C0000] text-sm font-body mt-2">
                 Happy Users Around World
               </p>
             </div>
 
             <div>
               <h3 className="text-3xl font-heading">17k</h3>
-              <p className="text-red-600 text-sm font-body mt-2">
+              <p className="text-[#9C0000] text-sm font-body mt-2">
                 Projects Already Done
               </p>
             </div>
@@ -70,7 +70,7 @@ const TestimonialsSection = () => {
                 className="bg-white/60 backdrop-blur-sm p-8 rounded-3xl mb-8 shadow-sm"
               >
                 {/* Stars */}
-                <div className="flex text-red-500 mb-4">
+                <div className="flex text-[#9C0000] mb-4">
                   {[...Array(5)].map((_, i) => (
                     <FaStar key={i} />
                   ))}
@@ -84,7 +84,7 @@ const TestimonialsSection = () => {
                   <h4 className="font-heading text-lg">
                     {item.name}
                   </h4>
-                  <p className="text-red-500 text-sm font-body">
+                  <p className="text-[#9C0000] text-sm font-body">
                     {item.role}
                   </p>
                 </div>

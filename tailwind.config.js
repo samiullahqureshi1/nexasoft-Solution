@@ -28,11 +28,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        heading: ["'Poltawski Nowy'", "serif"],
-        body: ["Poppins", "sans-serif"],
-        jost: ["Jost", "sans-serif"],
-      },
+      // fontFamily: {
+      //   heading: ["'Poltawski Nowy'", "serif"],
+      //   body: ["Poppins", "sans-serif"],
+      //   jost: ["Jost", "sans-serif"],
+      // },
       animation: {
         "spin-slow": "spin 12s linear infinite",
         marquee: "marquee 25s linear infinite",

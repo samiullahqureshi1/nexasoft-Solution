@@ -10,12 +10,12 @@ const MissionSection = () => {
         {/* LEFT */}
         <div>
           <p className="text-xs tracking-[4px] text-gray-600 uppercase mb-6 flex items-center gap-3">
-            <span className="w-2 h-2 bg-red-600 rounded-full"></span>
+            <span className="w-2 h-2 bg-[#9C0000] rounded-full"></span>
             WHERE VISION MEETS BORDERLESS INNOVATION
           </p>
 
           <h2 className="font-heading text-6xl leading-tight">
-            Our <span className="text-red-600">Mission</span>
+            Our <span className="text-[#9C0000]">Mission</span>
           </h2>
         </div>
 

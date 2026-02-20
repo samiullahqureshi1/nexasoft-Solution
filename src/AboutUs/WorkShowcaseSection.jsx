@@ -29,7 +29,7 @@ const WorkShowcaseSection = () => {
         {/* HEADER */}
         <div className="text-center mb-20">
           <h2 className="font-heading text-5xl mb-4">
-            Examples of <span className="text-red-600">Our Work</span>
+            Examples of <span className="text-[#9C0000]">Our Work</span>
           </h2>
           <p className="text-gray-600 font-body">
             Premium digital products crafted for performance & growth.
@@ -45,20 +45,21 @@ const WorkShowcaseSection = () => {
             >
               
               {/* IMAGE WRAPPER */}
-              <div className="h-[420px] overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full object-cover transition-transform duration-700 ease-in-out group-hover:-translate-y-10"
-                />
-              </div>
-
+             <div className="relative h-[420px] overflow-hidden">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full object-top 
+               transition-transform duration-[2500ms] ease-linear
+               group-hover:-translate-y-[65%]"
+              />
+            </div>
               {/* OVERLAY INFO */}
               <div className="absolute bottom-0 left-0 w-full bg-white p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                 <p className="text-sm text-gray-500 font-body mb-2">
                   {project.category}
                 </p>
-                <h3 className="font-heading text-xl group-hover:text-red-600 transition">
+                <h3 className="font-heading text-xl group-hover:text-[#9C0000] transition">
                   {project.title}
                 </h3>
               </div>

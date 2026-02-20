@@ -33,7 +33,7 @@ const HeroSection = () => {
               <br />
               Delivering
               <br />
-              <span className="text-red-600">Growth</span> & Performance
+              <span className="text-[#9C0000]">Growth</span> & Performance
             </h1>
           </div>
 

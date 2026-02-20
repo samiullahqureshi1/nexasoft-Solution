@@ -26,6 +26,11 @@ body {
   animation: marquee 8s linear infinite;
 }
 .stroke-text-red {
-  -webkit-text-stroke: 1.5px #b91c1c; /* Red border */
+  -webkit-text-stroke: 1.5px #9C0000; /* Red border */
   color: transparent; /* inside transparent */
+}
+@layer utilities {
+  .font-body {
+    font-weight: 600;
+  }
 }

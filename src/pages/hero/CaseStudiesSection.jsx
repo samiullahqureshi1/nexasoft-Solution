@@ -26,7 +26,7 @@ const CaseStudiesSection = () => {
         </p>
 
         <h2 className="font-heading text-5xl">
-          Selected <span className="text-red-600">Case Studies</span>
+          Selected <span className="text-[#9C0000]">Case Studies</span>
         </h2>
       </div>
 
@@ -55,7 +55,7 @@ const CaseStudiesSection = () => {
                     {project.desc}
                   </p>
 
-                  <h3 className="text-2xl font-heading group-hover:text-red-600 transition">
+                  <h3 className="text-2xl font-heading group-hover:text-[#9C0000] transition">
                     {project.title}
                   </h3>
                 </div>
@@ -83,7 +83,7 @@ const CaseStudiesSection = () => {
                     {project.desc}
                   </p>
 
-                  <h3 className="text-2xl font-heading group-hover:text-red-600 transition">
+                  <h3 className="text-2xl font-heading group-hover:text-[#9C0000] transition">
                     {project.title}
                   </h3>
                 </div>

@@ -74,7 +74,7 @@ const TechnologiesSection = () => {
             </p>
 
             <h2 className="font-heading text-5xl leading-tight">
-              <span className="text-red-600">Technologies</span> We Work with
+              <span className="text-[#9C0000]">Technologies</span> We Work with
             </h2>
           </div>
 
@@ -91,7 +91,7 @@ const TechnologiesSection = () => {
               {data[active].tech.map((item, index) => (
                 <div
                   key={index}
-                  className="w-40 h-52 rounded-[60px] border border-black/10 flex flex-col items-center justify-center text-center transition hover:border-red-400"
+                  className="w-40 h-52 rounded-[60px] border border-black/10 flex flex-col items-center justify-center text-center transition hover:border-[#9C0000]"
                 >
                   <div className="text-4xl text-gray-600 mb-4">
                     {item.icon}
@@ -110,7 +110,7 @@ const TechnologiesSection = () => {
                   key={index}
                   className={`w-2 h-2 rounded-full ${
                     active === index
-                      ? "bg-red-600"
+                      ? "bg-[#9C0000]"
                       : "bg-gray-300"
                   }`}
                 ></span>
@@ -133,8 +133,8 @@ const TechnologiesSection = () => {
                 <h3
                   className={`font-heading text-2xl transition ${
                     active === index
-                      ? "text-red-600"
-                      : "text-black group-hover:text-red-600"
+                      ? "text-[#9C0000]"
+                      : "text-black group-hover:text-[#9C0000]"
                   }`}
                 >
                   {item.title}

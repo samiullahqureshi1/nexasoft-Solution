@@ -193,7 +193,7 @@ const Footer = () => {
             +92 311 5050327
           </p>
 
-          <button className="text-red-600 font-body mt-4 hover:underline">
+          <button className="text-[#9C0000] font-body mt-4 hover:underline">
             Apply Now →
           </button>
         </div>
@@ -205,9 +205,9 @@ const Footer = () => {
           </h4>
 
           <div className="flex gap-6 text-xl text-black">
-            <FaFacebookF className="cursor-pointer hover:text-red-600 transition" />
-            <FaLinkedinIn className="cursor-pointer hover:text-red-600 transition" />
-            <FaInstagram className="cursor-pointer hover:text-red-600 transition" />
+            <FaFacebookF className="cursor-pointer hover:text-[#9C0000] transition" />
+            <FaLinkedinIn className="cursor-pointer hover:text-[#9C0000] transition" />
+            <FaInstagram className="cursor-pointer hover:text-[#9C0000] transition" />
           </div>
         </div>
 
@@ -226,7 +226,7 @@ const Footer = () => {
           </button>
 
           <h3 className="font-heading tracking-widest">
-            NEXA<span className="text-red-600">SOFT</span>
+            NEXA<span className="text-[#9C0000]">SOFT</span>
           </h3>
 
           <p className="text-gray-500 font-body text-sm">

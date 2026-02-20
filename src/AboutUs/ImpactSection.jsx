@@ -10,7 +10,7 @@ const ImpactSection = () => {
         <div>
           <h2 className="font-heading text-5xl leading-tight mb-6">
             Nexasoft Impact <br />
-            <span className="text-red-600">In Numbers</span>
+            <span className="text-[#9C0000]">In Numbers</span>
           </h2>
 
           <p className="text-gray-600 font-body mb-12 max-w-lg">
@@ -42,7 +42,7 @@ const ImpactSection = () => {
             </div>
           </div>
 
-        <button className="group flex items-center gap-3 px-8 py-4 rounded-full border border-red-600 text-red-600 font-body transition hover:bg-red-600 hover:text-white">
+        <button className="group flex items-center gap-3 px-8 py-4 rounded-full border border-[#9C0000] text-[#9C0000] font-body transition hover:bg-[#9C0000] hover:text-white">
   
   JOIN OUR SUCCESS STORY
   
@@ -67,7 +67,7 @@ const ImpactSection = () => {
           {/* PLAY BUTTON */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="w-20 h-20 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center cursor-pointer group-hover:scale-110 transition">
-              <FiPlay className="text-red-600 text-3xl ml-1" />
+              <FiPlay className="text-[#9C0000] text-3xl ml-1" />
             </div>
           </div>
 
