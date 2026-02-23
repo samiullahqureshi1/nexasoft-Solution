@@ -1,66 +1,55 @@
 import React, { useState } from "react";
 import {
   FaLaptopCode,
-  FaCube,
-  FaDesktop,
-  FaPenNib,
-  FaBoxOpen,
+  FaGlobe,
+  FaMobileAlt,
+  FaBriefcase,
 } from "react-icons/fa";
 
 const services = [
   {
     id: 1,
-    name: "Website Design & Development",
-    slug: "website-design-development",
+    name: "Custom Software ",
+    slug: "custom-software-development",
     icon: <FaLaptopCode />,
     description:
-      "We design and develop high-performing websites built for scalability, seamless functionality, and long-term business growth.",
+      "We build tailored software solutions designed around your unique business needs,  scalability, and long-term success.",
     image:
-      "https://img.freepik.com/free-photo/web-design-concepts-with-blurred-background_1134-82.jpg",
+      "https://img.freepik.com/premium-photo/erp-system-enterprise-resource-planning-blurred-background-business-automation-innovation-concept_161452-1369.jpg?ga=GA1.1.35512147.1759400476&semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 2,
-    name: "Strategic Brand Identity Design",
-    slug: "brand-design",
-    icon: <FaCube />,
+    name: "Web App Development",
+    slug: "web-app-development",
+    icon: <FaGlobe />,
     description:
-      "We create strategic brand identities that communicate your values clearly and build lasting emotional connections with audiences.",
+      "Modern, secure, and high-performing web applications engineered to streamline workflows and enhance user experience.",
     image:
-      "https://img.freepik.com/free-photo/hand-holding-notebook-with-drew-brand-logo-creative-design-ideas_53876-13985.jpg?ga=GA1.1.35512147.1759400476&semt=ais_hybrid&w=740&q=80",
+      "https://img.freepik.com/premium-photo/technology-design-interface-mobile-development-app-user-web-application-website-layout-bu_1064589-172675.jpg?ga=GA1.1.35512147.1759400476&semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 3,
-    name: "Creative Web Experience Design",
-    slug: "web-design",
-    icon: <FaDesktop />,
+    name: "App Development",
+    slug: "app-development",
+    icon: <FaMobileAlt />,
     description:
-      "We craft visually compelling web experiences that enhance usability, improve engagement, and guide users toward meaningful actions.",
+      "Robust mobile applications designed for performance, usability, and seamless cross-platform experiences.",
     image:
-      "https://img.freepik.com/free-photo/web-design-concepts-with-blurred-background_1134-82.jpg",
+      "https://img.freepik.com/premium-photo/technology-design-interface-mobile-development-app-user-web-application-website-layout-bu_1064589-172675.jpg?ga=GA1.1.35512147.1759400476&semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 4,
-    name: "Conversion-Focused Copywriting",
-    slug: "copywriting",
-    icon: <FaPenNib />,
+    name: "Business Solutions",
+    slug: "business-solutions",
+    icon: <FaBriefcase />,
     description:
-      "We write persuasive and strategic copy that builds trust, communicates value clearly, and turns visitors into loyal customers.",
+      "Intelligent software systems that automate operations, optimize processes, and drive measurable growth.",
     image:
-      "https://img.freepik.com/free-photo/cropped-photo-serious-young-man-sitting-office-coworking_171337-17650.jpg?t=st=1771833951~exp=1771837551~hmac=958129242d57f7b1718e1498c757b896bafdc8a592a20a957bc043bda72ad030&w=1480",
-  },
-  {
-    id: 5,
-    name: "E-Commerce & CMS Development",
-    slug: "ecommerce-cms",
-    icon: <FaBoxOpen />,
-    description:
-      "We build powerful eCommerce and CMS platforms designed to streamline operations, increase conversions.",
-    image:
-      "https://img.freepik.com/premium-photo/home-office-online-shopping-cart-with-click-frenzy-discounts-desktop-computer_416256-121060.jpg?ga=GA1.1.35512147.1759400476&semt=ais_hybrid&w=740&q=80",
+      "https://img.freepik.com/free-photo/businesswoman-holding-cup-coffee-while-discussing-with-multi-ethnic-teamwork-solving-management-project-using-graphs-paperwork-diverse-coworkers-working-meeting-room-late-night_482257-15811.jpg?ga=GA1.1.35512147.1759400476&semt=ais_hybrid&w=740&q=80",
   },
 ];
 
-const WebDesignHero = () => {
+const CustomHero = () => {
   const [active, setActive] = useState(1);
   const activeService = services.find((s) => s.id === active);
   return (
@@ -68,25 +57,21 @@ const WebDesignHero = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between gap-20">
           <div className="max-w-[700px]">
-            <p className="font-body text-xs tracking-[0.25em] text-gray-500 mb-8">
-              WEBSITE DESIGN & DEVELOPMENT
+            <p className="font-body text-xs tracking-[0.25em] text-gray-500 mb-8 uppercase">
+              CUSTOM SOFTWARE DEVELOPMENT
             </p>
 
             <h1 className="font-heading text-[70px] leading-[1.02] tracking-[-0.02em]">
-              <span className="text-[#1A1A1A] block">Websites That</span>
-
-              <span className="block">
-                <span className="text-[#9C0000]">Captivate</span>
-                <span className="text-[#1A1A1A]"> & Convert</span>
-              </span>
+              <span className="text-[#1A1A1A] block">Built-for-You</span>
+              <span className="text-[#9C0000] block">Software</span>
             </h1>
           </div>
 
           <div className="md:pt-16 max-w-[520px]">
             <p className="font-body text-[18px] leading-[1.8] text-gray-600">
-              We build beautiful, responsive websites engineered with AI-driven
-              insights to maximize engagement and drive results. Clarity,
-              strategy, and seamless functionality—powered by intelligence.
+              Tired of clunky tools that slow you down? We design AI-powered
+              custom software that solves real challenges – streamlining
+              workflows, automating tasks, and delighting your customers.
             </p>
           </div>
         </div>
@@ -154,4 +139,4 @@ const WebDesignHero = () => {
   );
 };
 
-export default WebDesignHero;
+export default CustomHero;

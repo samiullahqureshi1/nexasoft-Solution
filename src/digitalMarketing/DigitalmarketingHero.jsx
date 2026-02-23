@@ -1,66 +1,61 @@
 import React, { useState } from "react";
 import {
-  FaLaptopCode,
-  FaCube,
-  FaDesktop,
-  FaPenNib,
-  FaBoxOpen,
+  FaBullhorn,
+  FaSearch,
+  FaMousePointer,
+  FaHashtag,
+  FaChartLine,
 } from "react-icons/fa";
 
 const services = [
   {
     id: 1,
-    name: "Website Design & Development",
-    slug: "website-design-development",
-    icon: <FaLaptopCode />,
+    name: "Digital Marketing",
+    slug: "digital-marketing",
+    icon: <FaBullhorn />,
     description:
-      "We design and develop high-performing websites built for scalability, seamless functionality, and long-term business growth.",
-    image:
-      "https://img.freepik.com/free-photo/web-design-concepts-with-blurred-background_1134-82.jpg",
+      "Comprehensive digital strategies designed to build visibility, attract the right audience, and drive measurable business growth.",
+    image: "https://img.freepik.com/free-photo/notebook-with-words-digital-marketing_1134-434.jpg?ga=GA1.1.35512147.1759400476&semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 2,
-    name: "Strategic Brand Identity Design",
-    slug: "brand-design",
-    icon: <FaCube />,
+    name: "SEO",
+    slug: "seo",
+    icon: <FaSearch />,
     description:
-      "We create strategic brand identities that communicate your values clearly and build lasting emotional connections with audiences.",
-    image:
-      "https://img.freepik.com/free-photo/hand-holding-notebook-with-drew-brand-logo-creative-design-ideas_53876-13985.jpg?ga=GA1.1.35512147.1759400476&semt=ais_hybrid&w=740&q=80",
+      "Search engine optimization strategies that improve rankings, increase organic traffic, and deliver long-term results.",
+    image: "https://img.freepik.com/free-photo/magnifying-glass-with-seo-concepts_1134-81.jpg?ga=GA1.1.35512147.1759400476&semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 3,
-    name: "Creative Web Experience Design",
-    slug: "web-design",
-    icon: <FaDesktop />,
+    name: "PPC",
+    slug: "ppc",
+    icon: <FaMousePointer />,
     description:
-      "We craft visually compelling web experiences that enhance usability, improve engagement, and guide users toward meaningful actions.",
-    image:
-      "https://img.freepik.com/free-photo/web-design-concepts-with-blurred-background_1134-82.jpg",
+      "Targeted pay-per-click campaigns built to maximize ROI, increase conversions, and scale performance efficiently.",
+    image: "https://img.freepik.com/free-photo/online-marketing-commercial-connection-technology_53876-132688.jpg?ga=GA1.1.35512147.1759400476&semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 4,
-    name: "Conversion-Focused Copywriting",
-    slug: "copywriting",
-    icon: <FaPenNib />,
+    name: "Social Media",
+    slug: "social-media",
+    icon: <FaHashtag />,
     description:
-      "We write persuasive and strategic copy that builds trust, communicates value clearly, and turns visitors into loyal customers.",
-    image:
-      "https://img.freepik.com/free-photo/cropped-photo-serious-young-man-sitting-office-coworking_171337-17650.jpg?t=st=1771833951~exp=1771837551~hmac=958129242d57f7b1718e1498c757b896bafdc8a592a20a957bc043bda72ad030&w=1480",
+      "Creative and strategic social media campaigns that build engagement, trust, and strong brand communities.",
+    image: "https://img.freepik.com/free-psd/instagram-social-media-marketing-banner-business-promotion-design-template_47987-20513.jpg?ga=GA1.1.35512147.1759400476&semt=ais_hybrid&w=740&q=80",
   },
   {
     id: 5,
-    name: "E-Commerce & CMS Development",
-    slug: "ecommerce-cms",
-    icon: <FaBoxOpen />,
+    name: "Performance Marketing",
+    slug: "performance-marketing",
+    icon: <FaChartLine />,
     description:
-      "We build powerful eCommerce and CMS platforms designed to streamline operations, increase conversions.",
-    image:
-      "https://img.freepik.com/premium-photo/home-office-online-shopping-cart-with-click-frenzy-discounts-desktop-computer_416256-121060.jpg?ga=GA1.1.35512147.1759400476&semt=ais_hybrid&w=740&q=80",
+      "Data-focused marketing campaigns optimized continuously to improve results and drive sustainable growth.",
+    image: "https://img.freepik.com/premium-photo/floating-laptop-bar-chart-with-marketing-performance-text-concept-as-sleek-vector-illustration_980716-709557.jpg?ga=GA1.1.35512147.1759400476&semt=ais_hybrid&w=740&q=80",
   },
-];
+];;
 
-const WebDesignHero = () => {
+const DigitalMarketingHero = () => {
   const [active, setActive] = useState(1);
   const activeService = services.find((s) => s.id === active);
   return (
@@ -69,25 +64,21 @@ const WebDesignHero = () => {
         <div className="flex flex-col md:flex-row justify-between gap-20">
           <div className="max-w-[700px]">
             <p className="font-body text-xs tracking-[0.25em] text-gray-500 mb-8">
-              WEBSITE DESIGN & DEVELOPMENT
+              DIGITAL MARKETING SERVICES
             </p>
 
             <h1 className="font-heading text-[70px] leading-[1.02] tracking-[-0.02em]">
-              <span className="text-[#1A1A1A] block">Websites That</span>
-
-              <span className="block">
-                <span className="text-[#9C0000]">Captivate</span>
-                <span className="text-[#1A1A1A]"> & Convert</span>
-              </span>
+              <span className="text-[#9C0000]">Marketing</span>
+              <span className="text-[#1A1A1A]"> That Moves</span>
             </h1>
           </div>
 
           <div className="md:pt-16 max-w-[520px]">
-            <p className="font-body text-[18px] leading-[1.8] text-gray-600">
-              We build beautiful, responsive websites engineered with AI-driven
-              insights to maximize engagement and drive results. Clarity,
-              strategy, and seamless functionality—powered by intelligence.
-            </p>
+           <p className="font-body text-[18px] leading-[1.8] text-gray-600">
+  Data-driven strategies, powered by AI. We cut through the noise to build
+  campaigns that attract, engage, and convert your ideal audience,
+  driving real growth and lasting loyalty.
+</p>
           </div>
         </div>
 
@@ -154,4 +145,4 @@ const WebDesignHero = () => {
   );
 };
 
-export default WebDesignHero;
+export default DigitalMarketingHero;

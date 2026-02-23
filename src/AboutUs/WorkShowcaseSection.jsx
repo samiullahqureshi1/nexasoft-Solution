@@ -19,8 +19,46 @@ const projects = [
     image:
       "https://www.thewahidsolutions.com/cdn/shop/files/image_124_900x.png?v=1769173531",
   },
-];
 
+  // NEW ADDED PROJECTS
+
+  {
+    title: "Luxury Store UI",
+    category: "Shopify Development",
+    image:
+      "https://www.thewahidsolutions.com/cdn/shop/files/image_519_900x.png?v=1769173532",
+  },
+  {
+    title: "Brand Website Design",
+    category: "Web Development",
+    image:
+      "https://www.thewahidsolutions.com/cdn/shop/files/image_129_900x.png?v=1769173532",
+  },
+  {
+    title: "MezCrafts Ecommerce",
+    category: "Ecommerce Store",
+    image:
+      "https://www.thewahidsolutions.com/cdn/shop/files/screencapture-mezcrafts-2025-11-20-11_16_48_2_900x.png?v=1769173532",
+  },
+  {
+    title: "Modern Store Layout",
+    category: "UI/UX Design",
+    image:
+      "https://www.thewahidsolutions.com/cdn/shop/files/image_511_900x.png?v=1769173531",
+  },
+  {
+    title: "Custom Ecommerce Platform",
+    category: "Full Stack Development",
+    image:
+      "http://thewahidsolutions.com/cdn/shop/files/image_408_900x.png?v=1769173532",
+  },
+  {
+    title: "Luxury Beauty Variation",
+    category: "Shopify Store",
+    image:
+      "https://www.thewahidsolutions.com/cdn/shop/files/image_124_900x.png?v=1769173531",
+  },
+];
 const WorkShowcaseSection = () => {
   return (
     <section className="w-full bg-[#F1F3F5] py-32 border-t border-[#D9DADB]">

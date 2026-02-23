@@ -9,6 +9,10 @@ import { FiMessageCircle } from "react-icons/fi";
 import CaseStudiesPage from "./pages/CaseStudy";
 import { FaWhatsapp } from "react-icons/fa";
 import Websitedesign from "./pages/Websitedesign";
+import DigitalMarketing from "./pages/DigitalMarketing";
+import CustomSoftware from "./pages/CustomSoftware";
+import Blog from "./pages/Blog";
+import BlogDetail from "./Blogs/BlogDetail";
 
 function App() {
   return (
@@ -31,6 +35,20 @@ function App() {
         <Route
           path="/services/web-design-development"
           element={<Websitedesign />}
+        />
+        <Route
+          path="/services/digital-marketing"
+          element={<DigitalMarketing />}
+        />
+        <Route
+          path="/services/custom-software-development"
+          element={<CustomSoftware />}
+        />
+                <Route path="/blogs/:slug" element={<BlogDetail />} />
+
+          <Route
+          path="/blog"
+          element={<Blog />}
         />
       </Routes>
       <div className="fixed bottom-5 right-10 z-50 flex flex-col items-end gap-2">

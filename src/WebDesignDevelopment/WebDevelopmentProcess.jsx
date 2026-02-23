@@ -24,26 +24,38 @@ const processSteps = [
 ];
 
 const WebDevelopmentProcess = () => {
-  const projects = [
-    {
-      title: "Luxury Beauty Store",
-      category: "Ecommerce / Shopify",
-      image:
-        "https://www.thewahidsolutions.com/cdn/shop/files/image_124_900x.png?v=1769173531",
-    },
-    {
-      title: "Premium Fashion Brand",
-      category: "Web Design",
-      image:
-        "https://www.thewahidsolutions.com/cdn/shop/files/image_553_900x.png?v=1769173532",
-    },
-    {
-      title: "Modern Accessories",
-      category: "UI/UX Design",
-      image:
-        "https://www.thewahidsolutions.com/cdn/shop/files/image_124_900x.png?v=1769173531",
-    },
-  ];
+const projects = [
+  {
+    category: "Ecommerce / Shopify",
+    image:
+      "https://www.thewahidsolutions.com/cdn/shop/files/image_519_900x.png?v=1769173532",
+  },
+  {
+    category: "Web Design",
+    image:
+      "https://www.thewahidsolutions.com/cdn/shop/files/image_129_900x.png?v=1769173532",
+  },
+  {
+    category: "UI/UX Design",
+    image:
+      "https://www.thewahidsolutions.com/cdn/shop/files/screencapture-mezcrafts-2025-11-20-11_16_48_2_900x.png?v=1769173532",
+  },
+  {
+    category: "Shopify Development",
+    image:
+      "https://www.thewahidsolutions.com/cdn/shop/files/image_511_900x.png?v=1769173531",
+  },
+  {
+    category: "Custom Ecommerce",
+    image:
+      "https://thewahidsolutions.com/cdn/shop/files/image_408_900x.png?v=1769173532",
+  },
+  {
+    category: "Luxury Store",
+    image:
+      "https://www.thewahidsolutions.com/cdn/shop/files/image_124_900x.png?v=1769173531",
+  },
+];
 
   return (
     <>
@@ -114,36 +126,32 @@ const WebDevelopmentProcess = () => {
         </div>
 
         {/* GRID */}
-        <div className="grid md:grid-cols-3 gap-10">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="group relative overflow-hidden rounded-2xl border border-black/10 bg-white cursor-pointer"
-            >
-              
-              {/* IMAGE WRAPPER */}
-             <div className="relative h-[420px] overflow-hidden">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full object-top 
-               transition-transform duration-[2500ms] ease-linear
-               group-hover:-translate-y-[65%]"
-              />
-            </div>
-              {/* OVERLAY INFO */}
-              <div className="absolute bottom-0 left-0 w-full bg-white p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                <p className="text-sm text-gray-500 font-body mb-2">
-                  {project.category}
-                </p>
-                <h3 className="font-heading text-xl group-hover:text-[#9C0000] transition">
-                  {project.title}
-                </h3>
-              </div>
+    <div className="grid md:grid-cols-3 gap-10">
+  {projects.map((project, index) => (
+    <div
+      key={index}
+      className="group relative overflow-hidden rounded-2xl border border-black/10 bg-white cursor-pointer"
+    >
+      {/* IMAGE WRAPPER */}
+      <div className="relative h-[420px] overflow-hidden">
+        <img
+          src={project.image}
+          alt="project"
+          className="w-full object-top 
+          transition-transform duration-[2500ms] ease-linear
+          group-hover:-translate-y-[65%]"
+        />
+      </div>
 
-            </div>
-          ))}
-        </div>
+      {/* OPTIONAL CATEGORY ONLY (Title Removed) */}
+      <div className="absolute bottom-0 left-0 w-full bg-white p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+        <p className="text-sm text-gray-500 font-body">
+          {project.category}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
 
       </div>
     </section>

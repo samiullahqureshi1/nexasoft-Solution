@@ -87,10 +87,7 @@ const Navbar = () => {
 
           {/* SERVICES WITH DROPDOWN */}
           <div className="relative group">
-            <NavLink
-              to="/services"
-              className={`${linkStyle} hover:text-[#9C0000]`}
-            >
+            <NavLink className={`${linkStyle} hover:text-[#9C0000]`}>
               SERVICES
             </NavLink>
 
@@ -102,60 +99,45 @@ const Navbar = () => {
                 </h3>
 
                 <ul className="space-y-6 font-body text-[15px] text-[#333]">
+                  <li>
+                    <NavLink
+                      to="/services/web-design-development"
+                      className={({ isActive }) =>
+                        `transition-colors duration-300 block ${
+                          isActive ? "text-[#9C0000]" : "hover:text-[#9C0000]"
+                        }`
+                      }
+                    >
+                      Website Design & Development
+                    </NavLink>
+                  </li>
 
-  <li>
-    <NavLink
-      to="/services/web-design-development"
-      className={({ isActive }) =>
-        `transition-colors duration-300 block ${
-          isActive ? "text-[#9C0000]" : "hover:text-[#9C0000]"
-        }`
-      }
-    >
-      Website Design & Development
-    </NavLink>
-  </li>
+                  <li>
+                    <NavLink
+                      to="/services/digital-marketing"
+                      className={({ isActive }) =>
+                        `transition-colors duration-300 block ${
+                          isActive ? "text-[#9C0000]" : "hover:text-[#9C0000]"
+                        }`
+                      }
+                    >
+                      Digital Marketing
+                    </NavLink>
+                  </li>
 
-  <li>
-    <NavLink
-      to="/services/digital-marketing"
-      className={({ isActive }) =>
-        `transition-colors duration-300 block ${
-          isActive ? "text-[#9C0000]" : "hover:text-[#9C0000]"
-        }`
-      }
-    >
-      Digital Marketing
-    </NavLink>
-  </li>
-
-  <li>
-    <NavLink
-      to="/services/custom-software-development"
-      className={({ isActive }) =>
-        `transition-colors duration-300 block ${
-          isActive ? "text-[#9C0000]" : "hover:text-[#9C0000]"
-        }`
-      }
-    >
-      Custom Software Development
-    </NavLink>
-  </li>
-
-  <li>
-    <NavLink
-      to="/services/dedicated-resource-model"
-      className={({ isActive }) =>
-        `transition-colors duration-300 block ${
-          isActive ? "text-[#9C0000]" : "hover:text-[#9C0000]"
-        }`
-      }
-    >
-      Dedicated Resource Model
-    </NavLink>
-  </li>
-
-</ul>
+                  <li>
+                    <NavLink
+                      to="/services/custom-software-development"
+                      className={({ isActive }) =>
+                        `transition-colors duration-300 block ${
+                          isActive ? "text-[#9C0000]" : "hover:text-[#9C0000]"
+                        }`
+                      }
+                    >
+                      Custom Software Development
+                    </NavLink>
+                  </li>
+                </ul>
               </div>
 
               {/* RIGHT */}

@@ -26,11 +26,48 @@ body {
   animation: marquee 8s linear infinite;
 }
 .stroke-text-red {
-  -webkit-text-stroke: 1.5px #9C0000; /* Red border */
+  -webkit-text-stroke: 1.5px #9c0000; /* Red border */
   color: transparent; /* inside transparent */
 }
 @layer utilities {
   .font-body {
     font-weight: 600;
   }
+}
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4 {
+  color: #111111;
+  font-weight: 700;
+  margin-top: 48px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.blog-content h2 {
+  font-size: 28px;
+}
+
+.blog-content h3 {
+  font-size: 22px;
+}
+
+.blog-content p {
+  margin-bottom: 20px;
+}
+
+.blog-content ul {
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+
+.blog-content ul li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+
+.blog-content strong {
+  font-weight: 700;
+  color: #111111;
 }
