@@ -42,11 +42,11 @@ const TestimonialsSection = () => {
 
           <div className="border-b border-black/10 mb-8"></div>
 
-          <div className="flex gap-12">
+          <div className="flex gap-12 justify-between">
             <div>
               <h3 className="text-3xl font-heading">12k</h3>
               <p className="text-[#9C0000] text-sm font-body mt-2">
-                Happy Users Around World
+                Happy Clients
               </p>
             </div>
 
@@ -59,7 +59,6 @@ const TestimonialsSection = () => {
           </div>
         </div>
 
-        {/* RIGHT SIDE (Vertical Marquee) */}
         <div className="relative h-[500px] overflow-hidden">
 
           <div className="flex flex-col animate-verticalMarquee">
