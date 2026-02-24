@@ -107,24 +107,25 @@ const CaseStudiesPage = () => {
       : projects.filter((item) => item.category === activeFilter);
 
   return (
-    <div className="bg-[#F1F3F5] min-h-screen pt-40 px-16">
+    <div className="bg-[#F1F3F5] min-h-screen pt-24 sm:pt-28 md:pt-32 lg:pt-40">
       {/* HERO */}
-      <div className="max-w-7xl mx-auto mb-20">
-        <p className="font-body text-sm tracking-widest mb-6 flex items-center gap-2 text-gray-600">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 mb-12 sm:mb-16 md:mb-20">
+        <p className="font-body text-[10px] sm:text-xs tracking-[0.25em] mb-6 flex items-center gap-2 text-gray-600">
           <span className="w-2 h-2 bg-[#9C0000] rounded-full"></span>
           FROM VISION TO REALITY
         </p>
 
-        <h1 className="font-heading text-[90px] leading-none">
+        <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[90px] leading-[1.05]">
           <span className="text-black">Case </span>
           <span className="text-[#9C0000]">Studies</span>
         </h1>
       </div>
 
       {/* FILTER BAR */}
-      <div className="max-w-6xl mx-auto mb-16">
-        <div className="bg-white rounded-2xl px-8 py-4 flex flex-wrap gap-6 font-semibold text-sm">
-          <span className="text-gray-500">Filter By :</span>
+      <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16 mb-10 md:mb-14">
+        <div className="bg-white rounded-xl sm:rounded-2xl px-5 sm:px-8 py-4 flex flex-wrap items-center gap-4 sm:gap-6 font-semibold text-xs sm:text-sm shadow-sm">
+          <span className="text-gray-500">Filter :</span>
+
           {filters.map((filter) => (
             <button
               key={filter}
@@ -142,11 +143,15 @@ const CaseStudiesPage = () => {
       </div>
 
       {/* PROJECT GRID */}
-      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 pb-32">
+      <div
+        className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 
+    grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 
+    gap-6 sm:gap-8 md:gap-10 pb-20 sm:pb-24 md:pb-28"
+      >
         {filteredProjects.map((project) => (
           <div
             key={project.id}
-            className="group relative overflow-hidden rounded-2xl border border-[#E5E5E5] bg-white cursor-pointer transition-all duration-300"
+            className="group relative overflow-hidden rounded-xl sm:rounded-2xl border border-[#E5E5E5] bg-white cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
           >
             {/* IMAGE */}
             <div className="relative w-full aspect-[4/3] overflow-hidden">
@@ -159,7 +164,7 @@ const CaseStudiesPage = () => {
                   playsInline
                   preload="metadata"
                   className={`w-full h-full object-cover transition-transform duration-[2000ms] ease-linear
-      ${project.disableSlide ? "" : "group-hover:scale-105"}`}
+              ${project.disableSlide ? "" : "group-hover:scale-105"}`}
                 />
               ) : (
                 <img
@@ -167,33 +172,22 @@ const CaseStudiesPage = () => {
                   alt={project.title}
                   loading="lazy"
                   className={`w-full h-full object-cover object-top transition-transform duration-[2000ms] ease-linear
-      ${project.disableSlide ? "" : "group-hover:-translate-y-[65%]"}`}
+              ${project.disableSlide ? "" : "group-hover:-translate-y-[55%]"}`}
                 />
               )}
             </div>
 
-            {/* OVERLAY */}
-            {/* <div className="absolute bottom-0 left-0 w-full bg-white p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-              <p className="text-sm text-gray-500 font-body mb-2">
+            {/* INFO */}
+            <div className="absolute bottom-0 left-0 w-full bg-white p-4 sm:p-6">
+              <p className="text-xs sm:text-sm text-gray-500 mb-2">
                 {project.category}
               </p>
 
-              <h3 className="font-heading text-xl group-hover:text-[#9C0000] transition duration-300">
+              <h3 className="font-heading text-base sm:text-lg md:text-xl">
                 {project.title}
               </h3>
 
-              <div className="mt-4 w-0 group-hover:w-12 h-[2px] bg-[#9C0000] transition-all duration-300"></div>
-            </div> */}
-            <div className="absolute bottom-0 left-0 w-full bg-white p-6">
-              <p className="text-sm text-gray-500 font-body mb-2">
-                {project.category}
-              </p>
-
-              <h3 className="font-heading text-xl transition duration-300">
-                {project.title}
-              </h3>
-
-              <div className="mt-4 w-12 h-[2px] bg-[#9C0000]"></div>
+              <div className="mt-3 sm:mt-4 w-10 sm:w-12 h-[2px] bg-[#9C0000]"></div>
             </div>
           </div>
         ))}

@@ -3,32 +3,37 @@
 // import { NavLink, useNavigate } from "react-router-dom";
 
 // const Navbar = () => {
-//   const [showServices, setShowServices] = useState(false);
+//   const [mobileOpen, setMobileOpen] = useState(false);
+//   const [mobileServices, setMobileServices] = useState(false);
 //   const navigate = useNavigate();
+
 //   const linkStyle =
 //     "text-sm tracking-wider font-medium transition duration-300";
 
 //   return (
-//     <nav className="fixed top-0 left-0 w-full z-50 bg-[#F1F3F5] border-b border-[rgba(0,0,0,0.05)] px-16 py-6 font-body">
+//     <nav className="fixed top-0 left-0 w-full z-50 bg-[#F1F3F5] border-b border-[rgba(0,0,0,0.05)] px-6 md:px-10 lg:px-16 py-4 md:py-6 font-body">
 //       <div className="flex items-center justify-between">
-//         {/* LEFT */}
-//         <div className="flex space-x-8 relative">
+//         {/* LEFT DESKTOP */}
+//         <div className="hidden lg:flex space-x-8 relative">
 //           <NavLink
 //             to="/about-us"
 //             className={({ isActive }) =>
-//               `${linkStyle} ${isActive ? "text-[#9C0000]" : "hover:text-[#9C0000]"}`
+//               `${linkStyle} ${
+//                 isActive ? "text-[#9C0000]" : "hover:text-[#9C0000]"
+//               }`
 //             }
 //           >
 //             AGENCY
 //           </NavLink>
 
-//           {/* SERVICES WITH DROPDOWN */}
+//           {/* SERVICES DROPDOWN */}
 //           <div className="relative group">
-//             <NavLink className={`${linkStyle} hover:text-[#9C0000]`}>
+//             <span className={`${linkStyle} hover:text-[#9C0000] cursor-pointer`}>
 //               SERVICES
-//             </NavLink>
+//             </span>
 
 //             <div className="absolute top-12 left-0 w-[1000px] bg-[#F5F5F5] border border-[#E5E5E5] shadow-[0_10px_30px_rgba(0,0,0,0.05)] flex opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+              
 //               {/* LEFT */}
 //               <div className="w-1/2 p-10 border-r border-[#E5E5E5]">
 //                 <h3 className="font-heading tracking-wide mb-6 pb-4 border-b border-[#E5E5E5]">
@@ -39,37 +44,23 @@
 //                   <li>
 //                     <NavLink
 //                       to="/services/web-design-development"
-//                       className={({ isActive }) =>
-//                         `transition-colors duration-300 block ${
-//                           isActive ? "text-[#9C0000]" : "hover:text-[#9C0000]"
-//                         }`
-//                       }
+//                       className="hover:text-[#9C0000]"
 //                     >
 //                       Website Design & Development
 //                     </NavLink>
 //                   </li>
-
 //                   <li>
 //                     <NavLink
 //                       to="/services/digital-marketing"
-//                       className={({ isActive }) =>
-//                         `transition-colors duration-300 block ${
-//                           isActive ? "text-[#9C0000]" : "hover:text-[#9C0000]"
-//                         }`
-//                       }
+//                       className="hover:text-[#9C0000]"
 //                     >
 //                       Digital Marketing
 //                     </NavLink>
 //                   </li>
-
 //                   <li>
 //                     <NavLink
 //                       to="/services/custom-software-development"
-//                       className={({ isActive }) =>
-//                         `transition-colors duration-300 block ${
-//                           isActive ? "text-[#9C0000]" : "hover:text-[#9C0000]"
-//                         }`
-//                       }
+//                       className="hover:text-[#9C0000]"
 //                     >
 //                       Custom Software Development
 //                     </NavLink>
@@ -98,16 +89,8 @@
 //                 </div>
 
 //                 <button
-//                   onClick={() => {
-//                     navigate("/case-study");
-//                   }}
-//                   className="w-full py-4 bg-[#9C0000] text-white 
-// font-body font-semibold text-[15px] 
-// tracking-[0.08em] 
-// rounded-md 
-// border-2 border-[#9C0000] 
-// hover:bg-white hover:text-[#9C0000] 
-// transition-all duration-300 ease-in-out"
+//                   onClick={() => navigate("/case-study")}
+//                   className="w-full py-4 bg-[#9C0000] text-white font-body font-semibold text-[15px] tracking-[0.08em] rounded-md border-2 border-[#9C0000] hover:bg-white hover:text-[#9C0000] transition-all duration-300 ease-in-out"
 //                 >
 //                   Our Case Studies
 //                 </button>
@@ -117,31 +100,65 @@
 //         </div>
 
 //         {/* CENTER LOGO */}
-//         <NavLink to="/" className="text-3xl tracking-widest font-heading">
+//         <NavLink
+//           to="/"
+//           className="text-xl md:text-2xl lg:text-3xl tracking-widest font-heading text-center"
+//         >
 //           NEXA<span className="text-[#9C0000]">SOFT</span> SOLUTIONS
 //         </NavLink>
 
-//         {/* RIGHT */}
-//         <div className="flex space-x-8">
-//           <NavLink
-//             to="/blog"
-//             className={({ isActive }) =>
-//               `${linkStyle} ${isActive ? "text-[#9C0000]" : "hover:text-[#9C0000]"}`
-//             }
-//           >
+//         {/* RIGHT DESKTOP */}
+//         <div className="hidden lg:flex space-x-8">
+//           <NavLink to="/blog" className={linkStyle + " hover:text-[#9C0000]"}>
 //             THOUGHTS
 //           </NavLink>
 
-//           <NavLink
-//             to="/contact"
-//             className={({ isActive }) =>
-//               `${linkStyle} ${isActive ? "text-[#9C0000]" : "hover:text-[#9C0000]"}`
-//             }
-//           >
+//           <NavLink to="/contact" className={linkStyle + " hover:text-[#9C0000]"}>
 //             GET THROUGH
 //           </NavLink>
 //         </div>
+
+//         {/* MOBILE MENU BUTTON */}
+//         <button
+//           className="lg:hidden text-2xl"
+//           onClick={() => setMobileOpen(!mobileOpen)}
+//         >
+//           ☰
+//         </button>
 //       </div>
+
+//       {/* MOBILE MENU */}
+//       {mobileOpen && (
+//         <div className="lg:hidden mt-6 space-y-6 flex flex-col">
+//           <NavLink to="/about-us">AGENCY</NavLink>
+
+//           <div>
+//             <button
+//               onClick={() => setMobileServices(!mobileServices)}
+//               className="w-full text-left"
+//             >
+//               SERVICES
+//             </button>
+
+//             {mobileServices && (
+//               <div className="mt-4 ml-4 space-y-4">
+//                 <NavLink to="/services/web-design-development">
+//                   Website Design & Development
+//                 </NavLink>
+//                 <NavLink to="/services/digital-marketing">
+//                   Digital Marketing
+//                 </NavLink>
+//                 <NavLink to="/services/custom-software-development">
+//                   Custom Software Development
+//                 </NavLink>
+//               </div>
+//             )}
+//           </div>
+
+//           <NavLink to="/blog">THOUGHTS</NavLink>
+//           <NavLink to="/contact">GET THROUGH</NavLink>
+//         </div>
+//       )}
 //     </nav>
 //   );
 // };
@@ -155,158 +172,239 @@ const Navbar = () => {
   const [mobileServices, setMobileServices] = useState(false);
   const navigate = useNavigate();
 
-  const linkStyle =
+  const linkBase =
     "text-sm tracking-wider font-medium transition duration-300";
 
+  const activeStyle = "text-[#9C0000]";
+  const inactiveStyle = "hover:text-[#9C0000]";
+
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#F1F3F5] border-b border-[rgba(0,0,0,0.05)] px-6 md:px-10 lg:px-16 py-4 md:py-6 font-body">
-      <div className="flex items-center justify-between">
-        {/* LEFT DESKTOP */}
-        <div className="hidden lg:flex space-x-8 relative">
-          <NavLink
-            to="/about-us"
-            className={({ isActive }) =>
-              `${linkStyle} ${
-                isActive ? "text-[#9C0000]" : "hover:text-[#9C0000]"
-              }`
-            }
-          >
-            AGENCY
-          </NavLink>
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#F1F3F5] border-b border-black/5">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
 
-          {/* SERVICES DROPDOWN */}
-          <div className="relative group">
-            <span className={`${linkStyle} hover:text-[#9C0000] cursor-pointer`}>
-              SERVICES
-            </span>
+        {/* MAIN ROW */}
+        <div className="flex items-center justify-between h-[60px] md:h-[80px]">
 
-            <div className="absolute top-12 left-0 w-[1000px] bg-[#F5F5F5] border border-[#E5E5E5] shadow-[0_10px_30px_rgba(0,0,0,0.05)] flex opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-              
-              {/* LEFT */}
-              <div className="w-1/2 p-10 border-r border-[#E5E5E5]">
-                <h3 className="font-heading tracking-wide mb-6 pb-4 border-b border-[#E5E5E5]">
-                  AGENCY SERVICES – NEXASOFT SOLUTIONS
-                </h3>
+          {/* LEFT DESKTOP */}
+          <div className="hidden lg:flex items-center space-x-10">
 
-                <ul className="space-y-6 font-body text-[15px] text-[#333]">
-                  <li>
-                    <NavLink
-                      to="/services/web-design-development"
-                      className="hover:text-[#9C0000]"
-                    >
-                      Website Design & Development
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      to="/services/digital-marketing"
-                      className="hover:text-[#9C0000]"
-                    >
-                      Digital Marketing
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      to="/services/custom-software-development"
-                      className="hover:text-[#9C0000]"
-                    >
-                      Custom Software Development
-                    </NavLink>
-                  </li>
-                </ul>
-              </div>
-
-              {/* RIGHT */}
-              <div className="w-1/2 p-10 bg-[#ECECEC]">
-                <div className="pb-6 border-b border-[#DADADA] mb-6">
-                  <h4 className="font-heading text-[18px]">
-                    E-Commerce Platform
-                  </h4>
-                  <p className="font-body text-[14px] text-gray-600 mt-2">
-                    Increased conversions by 120%
-                  </p>
-                </div>
-
-                <div className="pb-6 border-b border-[#DADADA] mb-8">
-                  <h4 className="font-heading text-[18px]">
-                    Healthcare Portal
-                  </h4>
-                  <p className="font-body text-[14px] text-gray-600 mt-2">
-                    Streamlined patient management
-                  </p>
-                </div>
-
-                <button
-                  onClick={() => navigate("/case-study")}
-                  className="w-full py-4 bg-[#9C0000] text-white font-body font-semibold text-[15px] tracking-[0.08em] rounded-md border-2 border-[#9C0000] hover:bg-white hover:text-[#9C0000] transition-all duration-300 ease-in-out"
-                >
-                  Our Case Studies
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* CENTER LOGO */}
-        <NavLink
-          to="/"
-          className="text-xl md:text-2xl lg:text-3xl tracking-widest font-heading text-center"
-        >
-          NEXA<span className="text-[#9C0000]">SOFT</span> SOLUTIONS
-        </NavLink>
-
-        {/* RIGHT DESKTOP */}
-        <div className="hidden lg:flex space-x-8">
-          <NavLink to="/blog" className={linkStyle + " hover:text-[#9C0000]"}>
-            THOUGHTS
-          </NavLink>
-
-          <NavLink to="/contact" className={linkStyle + " hover:text-[#9C0000]"}>
-            GET THROUGH
-          </NavLink>
-        </div>
-
-        {/* MOBILE MENU BUTTON */}
-        <button
-          className="lg:hidden text-2xl"
-          onClick={() => setMobileOpen(!mobileOpen)}
-        >
-          ☰
-        </button>
-      </div>
-
-      {/* MOBILE MENU */}
-      {mobileOpen && (
-        <div className="lg:hidden mt-6 space-y-6 flex flex-col">
-          <NavLink to="/about-us">AGENCY</NavLink>
-
-          <div>
-            <button
-              onClick={() => setMobileServices(!mobileServices)}
-              className="w-full text-left"
+            <NavLink
+              to="/about-us"
+              className={({ isActive }) =>
+                `${linkBase} ${isActive ? activeStyle : inactiveStyle}`
+              }
             >
-              SERVICES
-            </button>
+              AGENCY
+            </NavLink>
 
-            {mobileServices && (
-              <div className="mt-4 ml-4 space-y-4">
-                <NavLink to="/services/web-design-development">
-                  Website Design & Development
-                </NavLink>
-                <NavLink to="/services/digital-marketing">
-                  Digital Marketing
-                </NavLink>
-                <NavLink to="/services/custom-software-development">
-                  Custom Software Development
-                </NavLink>
+            {/* SERVICES DROPDOWN */}
+            <div className="relative group">
+
+              <span className={`${linkBase} cursor-pointer ${inactiveStyle}`}>
+                SERVICES
+              </span>
+
+              {/* DROPDOWN */}
+              <div className="absolute top-[70px] left-0 w-[950px] bg-white border border-[#E5E5E5] rounded-xl shadow-xl 
+              opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+              transition-all duration-300">
+
+                <div className="flex">
+
+                  {/* LEFT SIDE */}
+                  <div className="w-1/2 p-10 border-r border-[#E5E5E5]">
+
+                    <h3 className="font-heading text-sm tracking-widest mb-8 text-gray-900">
+                      AGENCY SERVICES
+                    </h3>
+
+                    <ul className="space-y-6 text-[15px] text-gray-700">
+
+                      <li>
+                        <NavLink
+                          to="/services/web-design-development"
+                          className="hover:text-[#9C0000] transition"
+                        >
+                          Website Design & Development
+                        </NavLink>
+                      </li>
+
+                      <li>
+                        <NavLink
+                          to="/services/digital-marketing"
+                          className="hover:text-[#9C0000] transition"
+                        >
+                          Digital Marketing
+                        </NavLink>
+                      </li>
+
+                      <li>
+                        <NavLink
+                          to="/services/custom-software-development"
+                          className="hover:text-[#9C0000] transition"
+                        >
+                          Custom Software Development
+                        </NavLink>
+                      </li>
+
+                    </ul>
+                  </div>
+
+                  {/* RIGHT SIDE */}
+                  <div className="w-1/2 p-10 bg-[#FAFAFA] rounded-r-xl">
+
+                    <div className="mb-8">
+                      <h4 className="font-heading text-lg text-gray-900">
+                        E-Commerce Platform
+                      </h4>
+                      <p className="text-sm text-gray-600 mt-2">
+                        Increased conversions by 120%
+                      </p>
+                    </div>
+
+                    <div className="mb-10">
+                      <h4 className="font-heading text-lg text-gray-900">
+                        Healthcare Portal
+                      </h4>
+                      <p className="text-sm text-gray-600 mt-2">
+                        Streamlined patient management
+                      </p>
+                    </div>
+
+                    <button
+                      onClick={() => navigate("/case-study")}
+                      className="w-full py-3 bg-[#9C0000] text-white text-sm tracking-wider font-semibold rounded-md 
+                      hover:bg-black transition duration-300"
+                    >
+                      VIEW CASE STUDIES
+                    </button>
+
+                  </div>
+
+                </div>
+
               </div>
-            )}
+
+            </div>
+
           </div>
 
-          <NavLink to="/blog">THOUGHTS</NavLink>
-          <NavLink to="/contact">GET THROUGH</NavLink>
+          {/* CENTER LOGO */}
+          <NavLink
+            to="/"
+            className="text-xl md:text-2xl lg:text-3xl tracking-widest font-heading"
+          >
+            NEXA<span className="text-[#9C0000]">SOFT</span> SOLUTIONS
+          </NavLink>
+
+          {/* RIGHT DESKTOP */}
+          <div className="hidden lg:flex items-center space-x-10">
+
+            <NavLink
+              to="/blog"
+              className={({ isActive }) =>
+                `${linkBase} ${isActive ? activeStyle : inactiveStyle}`
+              }
+            >
+              THOUGHTS
+            </NavLink>
+
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                `${linkBase} ${isActive ? activeStyle : inactiveStyle}`
+              }
+            >
+              CONTACT
+            </NavLink>
+
+          </div>
+
+          {/* MOBILE MENU BUTTON */}
+          <button
+            className="lg:hidden text-2xl"
+            onClick={() => setMobileOpen(!mobileOpen)}
+          >
+            ☰
+          </button>
+
         </div>
-      )}
+
+        {/* MOBILE MENU */}
+        {mobileOpen && (
+          <div className="lg:hidden pb-8 space-y-6 flex flex-col text-sm font-medium">
+
+            <NavLink
+              to="/about-us"
+              onClick={() => setMobileOpen(false)}
+            >
+              AGENCY
+            </NavLink>
+
+            <div>
+              <button
+                onClick={() => setMobileServices(!mobileServices)}
+                className="w-full text-left"
+              >
+                SERVICES
+              </button>
+
+             {mobileServices && (
+  <div className="mt-4 ml-2 border-l-2 border-[#9C0000] pl-4 space-y-5">
+
+    <NavLink
+      to="/services/web-design-development"
+      onClick={() => setMobileOpen(false)}
+      className="block text-sm tracking-wide font-medium text-gray-800 hover:text-[#9C0000] transition"
+    >
+      Website Design & Development
+    </NavLink>
+
+    <NavLink
+      to="/services/digital-marketing"
+      onClick={() => setMobileOpen(false)}
+      className="block text-sm tracking-wide font-medium text-gray-800 hover:text-[#9C0000] transition"
+    >
+      Digital Marketing
+    </NavLink>
+
+    <NavLink
+      to="/services/custom-software-development"
+      onClick={() => setMobileOpen(false)}
+      className="block text-sm tracking-wide font-medium text-gray-800 hover:text-[#9C0000] transition"
+    >
+      Custom Software Development
+    </NavLink>
+     <NavLink
+      to="/case-study"
+      onClick={() => setMobileOpen(false)}
+      className="block text-sm tracking-wide font-medium text-gray-800 hover:text-[#9C0000] transition"
+    >
+      Case Studies
+    </NavLink>
+
+  </div>
+)}
+            </div>
+
+            <NavLink
+              to="/blog"
+              onClick={() => setMobileOpen(false)}
+            >
+              THOUGHTS
+            </NavLink>
+
+            <NavLink
+              to="/contact"
+              onClick={() => setMobileOpen(false)}
+            >
+              CONTACT
+            </NavLink>
+
+          </div>
+        )}
+
+      </div>
     </nav>
   );
 };
