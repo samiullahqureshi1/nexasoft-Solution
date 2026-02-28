@@ -23,40 +23,7 @@ const BlogSection = () => {
   <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
 
     {/* FILTER + SEARCH */}
-    <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-10 md:mb-14">
-
-      {/* FILTER */}
-      <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 w-full lg:w-auto">
-        <span className="text-gray-500 text-sm sm:text-base">
-          Filter
-        </span>
-
-        <select
-          value={filter}
-          onChange={(e) => setFilter(e.target.value)}
-          className="w-full sm:w-[220px] h-[44px] sm:h-[48px] px-4 border border-gray-300 bg-[#F8F9FA] 
-          rounded-md text-sm sm:text-base text-gray-700 focus:outline-none focus:border-gray-400"
-        >
-          {categories.map((cat, i) => (
-            <option key={i}>{cat}</option>
-          ))}
-        </select>
-      </div>
-
-      {/* SEARCH */}
-      <div className="w-full lg:max-w-md">
-        <input
-          type="text"
-          placeholder="Search blogs..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          className="w-full h-[44px] sm:h-[48px] px-5 border border-gray-300 bg-[#F8F9FA] 
-          rounded-md text-sm sm:text-base text-gray-700 placeholder-gray-400 
-          focus:outline-none focus:border-gray-400"
-        />
-      </div>
-
-    </div>
+   
 
     {/* BLOG GRID */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">

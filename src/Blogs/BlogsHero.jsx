@@ -2,7 +2,7 @@ import React from "react";
 
 const BlogHero = () => {
   return (
-    <section className="w-full bg-[#F1F3F5] pt-24 sm:pt-28 md:pt-32 lg:pt-40 pb-16 sm:pb-20 md:pb-24 lg:pb-28">
+    <section className="w-full bg-[#F1F3F5] pt-24 sm:pt-28 md:pt-32 lg:pt-40 ">
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
         
         {/* Small Label */}

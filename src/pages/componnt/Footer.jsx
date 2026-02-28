@@ -1,6 +1,7 @@
 import React from "react";
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
+import { Link } from "react-router-dom";
 const Footer = () => {
   const socialLinks = [
     {
@@ -76,19 +77,41 @@ const Footer = () => {
           {/* QUICK LINKS COLUMN */}
           <div>
             <h4 className="font-semibold mb-6 text-[#1A1A1A]">Quick Links</h4>
-
             <ul className="space-y-3 text-gray-600 text-sm">
-              <li className="hover:text-[#9C0000] cursor-pointer transition">
-                Digital Marketing
+              <li>
+                <Link
+                  to="/services/digital-marketing"
+                  className="hover:text-[#9C0000] transition"
+                >
+                  Digital Marketing
+                </Link>
               </li>
-              <li className="hover:text-[#9C0000] cursor-pointer transition">
-                Custom Software
+
+              <li>
+                <Link
+                  to="/services/custom-software-development"
+                  className="hover:text-[#9C0000] transition"
+                >
+                  Custom Software
+                </Link>
               </li>
-              <li className="hover:text-[#9C0000] cursor-pointer transition">
-                Web App Development
+
+              <li>
+                <Link
+                  to="/services/web-design-development"
+                  className="hover:text-[#9C0000] transition"
+                >
+                  Web App Development
+                </Link>
               </li>
-              <li className="hover:text-[#9C0000] cursor-pointer transition">
-                Shopify Development
+
+              <li>
+                <Link
+                  to="/services/web-design-development"
+                  className="hover:text-[#9C0000] transition"
+                >
+                  Shopify Development
+                </Link>
               </li>
             </ul>
           </div>

@@ -13,11 +13,13 @@ import DigitalMarketing from "./pages/DigitalMarketing";
 import CustomSoftware from "./pages/CustomSoftware";
 import Blog from "./pages/Blog";
 import BlogDetail from "./Blogs/BlogDetail";
+import ScrollToTop from "./pages/componnt/ScrollToTop";
 
 function App() {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
 
       <Routes>
         <Route
@@ -48,7 +50,7 @@ function App() {
 
         <Route path="/blog" element={<Blog />} />
       </Routes>
-      <div className="fixed bottom-5 right-10 z-50 flex flex-col items-end gap-2">
+      {/* <div className="fixed bottom-5 right-10 z-50 flex flex-col items-end gap-2">
         <div className="bg-white text-black text-[9px] font-black px-4 py-1.5 rounded-full shadow-xl animate-bounce tracking-tighter">
           WE ARE HERE!
         </div>
@@ -60,7 +62,7 @@ function App() {
             <FaWhatsapp size={32} color="white" />
           </div>
         </div>
-      </div>
+      </div> */}
       <Footer />
     </>
   );

@@ -9,7 +9,7 @@ const projects = [
     type: "image",
     disableSlide: true,
     image:
-      "https://cdn.dribbble.com/userupload/8487632/file/original-278659aec7eb68f9ec56f44d3b5d55e3.png",
+      "https://cdn.shopify.com/s/files/1/0676/1155/7936/files/NexaSoft.webp?v=1772309770",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const projects = [
     type: "image",
     disableSlide: true,
     image:
-      "https://cdn.dribbble.com/userupload/43395603/file/original-4d875726d2a266fb1da5fe82baa5e4b7.png",
+      "https://cdn.shopify.com/s/files/1/0676/1155/7936/files/neasot.webp?v=1772309850",
   },
   {
     id: 3,
@@ -29,8 +29,6 @@ const projects = [
     video:
       "https://cdn.dribbble.com/userupload/43514193/file/original-222bd4f8369f5e9f77aa6ccd6287b03d.mp4",
   },
-
-  // SHOPIFY PROJECTS
   {
     id: 4,
     title: "Luxury Beauty Store",
@@ -95,7 +93,6 @@ const filters = [
   "Website Design & Development",
   "Digital Marketing",
   "Custom Software Development",
-  "Dedicated Resource Model",
   "Ecommerce / Shopify",
 ];
 const CaseStudiesPage = () => {
