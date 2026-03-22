@@ -7,8 +7,10 @@ import TechnologiesSection from "./hero/TechnologiesSection";
 import CaseStudiesSection from "./hero/CaseStudiesSection";
 import TestimonialsSection from "./hero/TestimonialsSection";
 import DiscussCTA from "./hero/DiscussCTA";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate=useNavigate()
   return (
     <>
       <section
@@ -46,7 +48,9 @@ const HeroSection = () => {
           </div>
 
           {/* RIGHT SIDE CIRCLE */}
-          <div className="hidden md:flex items-center justify-center cursor-pointer">
+          <div onClick={()=>{
+            navigate('/case-study')
+          }} className="hidden md:flex items-center justify-center cursor-pointer">
             <div className="relative w-40 h-40 md:w-48 md:h-48 lg:w-52 lg:h-52 flex items-center justify-center">
               {/* Rotating Circular Text */}
               <svg
