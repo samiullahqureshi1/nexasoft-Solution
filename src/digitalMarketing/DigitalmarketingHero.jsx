@@ -139,7 +139,7 @@ const navigate=useNavigate()
               </button>
             </div>
 
-            {/* IMAGE */}
+            
             <div className="flex-1 w-full">
               <img
                 src={activeService.image}
