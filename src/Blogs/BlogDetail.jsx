@@ -35,7 +35,7 @@ const BlogDetail = () => {
 
         {/* AUTHOR */}
         <div className="flex items-center gap-4">
-          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-300 rounded-full"></div>
+          {/* <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-300 rounded-full"></div> */}
           <div>
             <p className="text-xs sm:text-sm text-gray-500">Author</p>
             <p className="text-sm sm:text-base font-medium text-gray-900">
