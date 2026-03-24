@@ -5,6 +5,7 @@ import {
   FaMobileAlt,
   FaBriefcase,
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
@@ -51,6 +52,7 @@ const services = [
 
 const CustomHero = () => {
   const [active, setActive] = useState(1);
+  const navigate=useNavigate()
   const activeService = services.find((s) => s.id === active);
   return (
  <section className="w-full bg-[#F1F3F5] pt-24 sm:pt-28 md:pt-32 lg:pt-40">
@@ -127,7 +129,9 @@ const CustomHero = () => {
             {activeService.description}
           </p>
 
-          <button className="group w-full sm:w-auto flex justify-center items-center gap-3 px-6 md:px-8 py-3 md:py-4 rounded-full border border-[#9C0000] text-[#9C0000] font-body transition hover:bg-[#9C0000] hover:text-white">
+          <button  onClick={() => {
+                  navigate("/contact");
+                }} className="group w-full sm:w-auto flex justify-center items-center gap-3 px-6 md:px-8 py-3 md:py-4 rounded-full border border-[#9C0000] text-[#9C0000] font-body transition hover:bg-[#9C0000] hover:text-white">
             Let’s Make Something Together
           </button>
         </div>

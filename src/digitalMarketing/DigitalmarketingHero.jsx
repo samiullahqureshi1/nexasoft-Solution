@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import {
   FaBullhorn,
@@ -7,6 +6,7 @@ import {
   FaHashtag,
   FaChartLine,
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
@@ -59,11 +59,10 @@ const services = [
 const DigitalMarketingHero = () => {
   const [active, setActive] = useState(1);
   const activeService = services.find((s) => s.id === active);
-
+const navigate=useNavigate()
   return (
     <section className="w-full bg-[#F1F3F5] pt-24 sm:pt-28 md:pt-32 lg:pt-40">
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
-
         {/* TOP SECTION */}
         <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-20">
           <div className="max-w-[700px]">
@@ -79,9 +78,9 @@ const DigitalMarketingHero = () => {
 
           <div className="lg:pt-16 max-w-[520px]">
             <p className="font-body text-sm sm:text-base md:text-lg leading-[1.8] text-gray-600">
-              Data-driven strategies, powered by AI. We cut through the noise to build
-              campaigns that attract, engage, and convert your ideal audience,
-              driving real growth and lasting loyalty.
+              Data-driven strategies, powered by AI. We cut through the noise to
+              build campaigns that attract, engage, and convert your ideal
+              audience, driving real growth and lasting loyalty.
             </p>
           </div>
         </div>
@@ -106,9 +105,7 @@ const DigitalMarketingHero = () => {
                     {service.icon}
                   </div>
 
-                  <p className="font-body text-xs md:text-sm">
-                    {service.name}
-                  </p>
+                  <p className="font-body text-xs md:text-sm">{service.name}</p>
                 </div>
 
                 {active === service.id && (
@@ -122,7 +119,6 @@ const DigitalMarketingHero = () => {
         {/* BOTTOM CONTENT */}
         <div className="py-14 md:py-20">
           <div className="flex flex-col lg:flex-row items-center gap-12 md:gap-16">
-
             {/* TEXT */}
             <div className="flex-1 max-w-[550px] text-center lg:text-left">
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading mb-6">
@@ -133,7 +129,12 @@ const DigitalMarketingHero = () => {
                 {activeService.description}
               </p>
 
-              <button className="group w-full sm:w-auto flex justify-center items-center gap-3 px-6 md:px-8 py-3 md:py-4 rounded-full border border-[#9C0000] text-[#9C0000] font-body transition hover:bg-[#9C0000] hover:text-white">
+              <button
+                onClick={() => {
+                  navigate("/contact");
+                }}
+                className="group w-full sm:w-auto flex justify-center items-center gap-3 px-6 md:px-8 py-3 md:py-4 rounded-full border border-[#9C0000] text-[#9C0000] font-body transition hover:bg-[#9C0000] hover:text-white"
+              >
                 Let’s Make Something Together
               </button>
             </div>
@@ -146,10 +147,8 @@ const DigitalMarketingHero = () => {
                 className="w-full h-[240px] sm:h-[300px] md:h-[360px] lg:h-auto object-cover rounded-xl shadow-lg"
               />
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
   );

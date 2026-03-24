@@ -163,6 +163,7 @@ import {
   FaPenNib,
   FaBoxOpen,
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
@@ -220,7 +221,7 @@ const services = [
 const WebDesignHero = () => {
   const [active, setActive] = useState(1);
   const activeService = services.find((s) => s.id === active);
-
+const navigate=useNavigate()
   return (
     <section className="w-full bg-[#F1F3F5] pt-24 sm:pt-28 md:pt-32 lg:pt-40">
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
@@ -299,7 +300,9 @@ const WebDesignHero = () => {
                 {activeService.description}
               </p>
 
-              <button className="group w-full sm:w-auto flex justify-center items-center gap-3 px-6 md:px-8 py-3 md:py-4 rounded-full border border-[#9C0000] text-[#9C0000] font-body transition hover:bg-[#9C0000] hover:text-white">
+              <button  onClick={() => {
+                  navigate("/contact");
+                }} className="group w-full sm:w-auto flex justify-center items-center gap-3 px-6 md:px-8 py-3 md:py-4 rounded-full border border-[#9C0000] text-[#9C0000] font-body transition hover:bg-[#9C0000] hover:text-white">
                 Let’s Make Something Together
               </button>
             </div>
