@@ -1,93 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
+import caseStudies from "../data/caseStudies";
 
-const projects = [
-  // SOFTWARE PROJECTS
-  {
-    id: 1,
-    title: "ERP System",
-    category: "Custom Software Development",
-    type: "image",
-    disableSlide: true,
-    image:
-      "https://cdn.shopify.com/s/files/1/0676/1155/7936/files/NexaSoft.webp?v=1772309770",
-  },
-  {
-    id: 2,
-    title: "CRM System",
-    category: "Custom Software Development",
-    type: "image",
-    disableSlide: true,
-    image:
-      "https://cdn.shopify.com/s/files/1/0676/1155/7936/files/neasot.webp?v=1772309850",
-  },
-  {
-    id: 3,
-    title: "AI-Based HRMS",
-    category: "Custom Software Development",
-    type: "video",
-    disableSlide: true,
-    video:
-      "https://cdn.dribbble.com/userupload/43514193/file/original-222bd4f8369f5e9f77aa6ccd6287b03d.mp4",
-  },
-  {
-    id: 4,
-    title: "Luxury Beauty Store",
-    category: "Ecommerce / Shopify",
-    type: "image",
-    disableSlide: false,
-    image:
-      "https://www.thewahidsolutions.com/cdn/shop/files/image_124_900x.png?v=1769173531",
-  },
-  {
-    id: 5,
-    title: "Shopify Fashion Store",
-    category: "Ecommerce / Shopify",
-    type: "video",
-    disableSlide: false,
-    video:
-      "https://cdn.dribbble.com/userupload/3884018/file/original-47c1e3a80b5df282a8e8cdf89ef0d301.mp4",
-  },
-  {
-    id: 6,
-    title: "Shopify Electronics Store",
-    category: "Ecommerce / Shopify",
-    type: "image",
-    disableSlide: true,
-    image:
-      "https://cdn.dribbble.com/userupload/44954535/file/66e083474e5ee314098d6f9878f09545.png",
-  },
-
-  // WEBSITE DESIGN
-  {
-    id: 7,
-    title: "Premium Fashion Brand",
-    category: "Website Design & Development",
-    type: "image",
-    disableSlide: false,
-    image:
-      "https://www.thewahidsolutions.com/cdn/shop/files/image_553_900x.png?v=1769173532",
-  },
-  {
-    id: 8,
-    title: "Brand Website Design",
-    category: "Website Design & Development",
-    type: "image",
-    disableSlide: false,
-    image:
-      "https://www.thewahidsolutions.com/cdn/shop/files/image_129_900x.png?v=1769173532",
-  },
-
-  // UI/UX
-  {
-    id: 9,
-    title: "Modern Accessories UI",
-    category: "Website Design & Development",
-    type: "image",
-    disableSlide: true,
-    image:
-      "https://www.thewahidsolutions.com/cdn/shop/files/image_511_900x.png?v=1769173531",
-  },
-];
 const filters = [
   "All",
   "Website Design & Development",
@@ -95,8 +10,6 @@ const filters = [
   "Custom Software Development",
   "Ecommerce / Shopify",
 ];
-
-import SEO from "../components/SEO";
 
 const portfolioSchema = {
   "@context": "https://schema.org",
@@ -116,8 +29,8 @@ const CaseStudiesPage = () => {
 
   const filteredProjects =
     activeFilter === "All"
-      ? projects
-      : projects.filter((item) => item.category === activeFilter);
+      ? caseStudies
+      : caseStudies.filter((item) => item.category === activeFilter);
 
   return (
     <div className="bg-[#F1F3F5] min-h-screen pt-24 sm:pt-28 md:pt-32 lg:pt-40">
@@ -169,9 +82,10 @@ const CaseStudiesPage = () => {
     gap-6 sm:gap-8 md:gap-10 pb-20 sm:pb-24 md:pb-28"
       >
         {filteredProjects.map((project) => (
-          <div
+          <Link
+            to={`/case-study/${project.slug}`}
             key={project.id}
-            className="group relative overflow-hidden rounded-xl sm:rounded-2xl border border-[#E5E5E5] bg-white cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+            className="group relative overflow-hidden rounded-xl sm:rounded-2xl border border-[#E5E5E5] bg-white cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-1 block"
           >
             {/* IMAGE */}
             <div className="relative w-full aspect-[4/3] overflow-hidden">
@@ -210,7 +124,7 @@ const CaseStudiesPage = () => {
 
               <div className="mt-3 sm:mt-4 w-10 sm:w-12 h-[2px] bg-[#9C0000]"></div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

@@ -154,9 +154,26 @@ const BlogDetail = () => {
               text-gray-700
               text-base sm:text-lg
               leading-[1.9]
+              mb-16
             "
             dangerouslySetInnerHTML={{ __html: blog.content }}
           />
+
+          {/* AUTHOR BIO SECTION */}
+          <div className="bg-[#F1F3F5] rounded-2xl p-8 flex flex-col md:flex-row items-center md:items-start gap-6 mb-10">
+            <div className="w-24 h-24 rounded-full bg-[#9C0000] text-white flex items-center justify-center text-3xl font-bold flex-shrink-0">
+              {blog.author.charAt(0)}
+            </div>
+            <div>
+              <h3 className="font-bold text-xl text-black mb-2">{blog.author}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                Senior Technical Writer & Strategist at Nexasoft Solutions. Specializing in digital transformation, software architecture, and data-driven marketing strategies to help businesses scale efficiently.
+              </p>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[#9C0000] text-sm font-semibold hover:underline">
+                Connect on LinkedIn →
+              </a>
+            </div>
+          </div>
 
         </div>
       </section>

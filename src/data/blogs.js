@@ -15,7 +15,7 @@ const blogs = [
     content: `
   <p>Rebranding is not about changing a logo or refreshing colours. It's a strategic decision that can redefine how a business is perceived, understood, and trusted.</p>
 
-  <p>When done right, rebranding helps companies realign with their audience, sharpen their positioning, and prepare for growth. When done poorly, it creates confusion and wastes resources.</p>
+  <p>When done right, <a href="/services/digital-marketing" class="text-[#9C0000] hover:underline font-semibold">rebranding helps companies realign with their audience</a>, sharpen their positioning, and prepare for growth. When done poorly, it creates confusion and wastes resources.</p>
 
   <h2>What Rebranding Really Means (And What It Doesn't)</h2>
   <p>Rebranding is the process of reshaping how a brand is positioned, communicated, and experienced. While it often includes visual identity changes, it goes much deeper than that.</p>
