@@ -7,12 +7,71 @@ import TechnologiesSection from "./hero/TechnologiesSection";
 import CaseStudiesSection from "./hero/CaseStudiesSection";
 import TestimonialsSection from "./hero/TestimonialsSection";
 import DiscussCTA from "./hero/DiscussCTA";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import SEO from "../components/SEO";
+
+const homepageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Nexasoft Solutions",
+  "url": "https://thenexasoftsolutions.com",
+  "logo": "https://cdn.shopify.com/s/files/1/0676/1155/7936/files/20260228_1200_Image_Generation_simple_compose_01kjjxd1yge5p9bd1xhb63nv84.png?v=1772309488",
+  "image": "https://cdn.shopify.com/s/files/1/0676/1155/7936/files/20260228_1200_Image_Generation_simple_compose_01kjjxd1yge5p9bd1xhb63nv84.png?v=1772309488",
+  "description": "Nexasoft Solutions is a software agency specializing in custom software development, web design & development, and digital marketing services.",
+  "email": "solutionsneasoft@gmail.com",
+  "priceRange": "$$",
+  "serviceType": [
+    "Custom Software Development",
+    "Web Design and Development",
+    "Digital Marketing",
+    "SEO Services",
+    "Shopify Development",
+    "ERP System Development"
+  ],
+  "areaServed": ["Pakistan", "United States", "United Kingdom"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Software & Digital Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Web Design & Development",
+          "url": "https://thenexasoftsolutions.com/services/web-design-development"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Digital Marketing",
+          "url": "https://thenexasoftsolutions.com/services/digital-marketing"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Custom Software Development",
+          "url": "https://thenexasoftsolutions.com/services/custom-software-development"
+        }
+      }
+    ]
+  }
+};
 
 const HeroSection = () => {
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   return (
     <>
+      <SEO
+        title="Software Agency | Web Design, Custom Software & Digital Marketing"
+        description="Nexasoft Solutions is a software agency delivering custom software development, professional web design & development, and result-driven digital marketing. Serving Pakistan, the US & beyond."
+        canonical="https://thenexasoftsolutions.com/"
+        schema={homepageSchema}
+      />
+
       <section
         className="relative w-full 
   py-20 md:py-28 lg:py-32 
@@ -43,19 +102,24 @@ const HeroSection = () => {
               <br />
               Delivering
               <br />
-              <span className="text-[#9C0000]">Growth</span> & Performance
+              <span className="text-[#9C0000]">Growth</span> &amp; Performance
             </h1>
           </div>
 
           {/* RIGHT SIDE CIRCLE */}
-          <div onClick={()=>{
-            navigate('/case-study')
-          }} className="hidden md:flex items-center justify-center cursor-pointer">
+          <div
+            onClick={() => {
+              navigate("/case-study");
+            }}
+            className="hidden md:flex items-center justify-center cursor-pointer"
+            aria-label="View our case studies"
+          >
             <div className="relative w-40 h-40 md:w-48 md:h-48 lg:w-52 lg:h-52 flex items-center justify-center">
               {/* Rotating Circular Text */}
               <svg
                 className="absolute w-full h-full animate-spin-slow"
                 viewBox="0 0 200 200"
+                aria-hidden="true"
               >
                 <defs>
                   <path
@@ -83,7 +147,7 @@ const HeroSection = () => {
 
               {/* Center Arrow */}
               <div className="text-[#434343]">
-                <FiArrowUpRight size={24} md:size={26} strokeWidth={2} />
+                <FiArrowUpRight size={24} strokeWidth={2} />
               </div>
             </div>
           </div>

@@ -1,4 +1,9 @@
 User-agent: *
-Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://thenexasoftsolutions.com/
+Allow: /
+
+# Sitemaps
+Sitemap: https://thenexasoftsolutions.com/sitemap.xml
+
+# Crawl-delay (optional, remove if not needed)
+# Crawl-delay: 1

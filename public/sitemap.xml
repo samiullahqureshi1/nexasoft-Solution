@@ -1,36 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Homepage -->
   <url>
     <loc>https://thenexasoftsolutions.com/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
 
-  <url>
-    <loc>https://thenexasoftsolutions.com/contact</loc>
-  </url>
-
+  <!-- About Us -->
   <url>
     <loc>https://thenexasoftsolutions.com/about-us</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
+  <!-- Contact -->
+  <url>
+    <loc>https://thenexasoftsolutions.com/contact</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Case Studies -->
   <url>
     <loc>https://thenexasoftsolutions.com/case-study</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
+  <!-- Web Design & Development Service -->
   <url>
     <loc>https://thenexasoftsolutions.com/services/web-design-development</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
+  <!-- Digital Marketing Service -->
   <url>
     <loc>https://thenexasoftsolutions.com/services/digital-marketing</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
+  <!-- Custom Software Development Service -->
   <url>
     <loc>https://thenexasoftsolutions.com/services/custom-software-development</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog Listing -->
+  <url>
+    <loc>https://thenexasoftsolutions.com/blog</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/rebranding-done-right</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://thenexasoftsolutions.com/blog</loc>
+    <loc>https://thenexasoftsolutions.com/blogs/content-strategy-for-small-business</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/seo-basics-for-beginners</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/social-media-marketing-trends-2026</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/email-marketing-for-e-commerce</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/why-your-business-needs-a-custom-website</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/shopify-vs-woocommerce-which-is-right-for-your-store</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/what-is-erp-and-does-your-business-need-one</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/how-to-improve-website-conversion-rate</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/ai-in-business-practical-applications-in-2026</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/seo-vs-ppc-which-should-you-invest-in</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/ui-ux-design-principles-that-increase-conversions</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/how-to-choose-the-right-software-development-company</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/google-analytics-4-beginners-guide</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/local-seo-guide-for-small-businesses</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
 
 </urlset>

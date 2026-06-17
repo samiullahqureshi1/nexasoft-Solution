@@ -176,27 +176,6 @@ import { SiAdobe, SiCanva, SiWebflow, SiMongodb } from "react-icons/si";
 
 const data = [
   {
-    title: "Digital Marketing Services",
-    tech: [
-      {
-        img: "https://sevenkoncepts.com/_next/image/?url=https%3A%2F%2Fapi.sevenkoncepts.com%2Fuploads%2Fgoogleads_cd6cee20ef.png&w=640&q=75",
-        name: "Google Ads",
-      },
-      {
-        img: "https://sevenkoncepts.com/_next/image/?url=https%3A%2F%2Fapi.sevenkoncepts.com%2Fuploads%2Fmeta_5db30f718c.png&w=640&q=75",
-        name: "Meta",
-      },
-      {
-        img: "https://sevenkoncepts.com/_next/image/?url=https%3A%2F%2Fapi.sevenkoncepts.com%2Fuploads%2Fgooglekp_bd1a664328.png&w=640&q=75",
-        name: "Google KP",
-      },
-      {
-        img: "https://sevenkoncepts.com/_next/image/?url=https%3A%2F%2Fapi.sevenkoncepts.com%2Fuploads%2Fmailchimp_5ff475f4fb.png&w=640&q=75",
-        name: "Mailchimp",
-      },
-    ],
-  },
-  {
     title: "Designing and Branding",
     tech: [
       { icon: <FaFigma />, name: "Figma" },

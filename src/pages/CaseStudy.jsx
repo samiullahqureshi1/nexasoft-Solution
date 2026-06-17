@@ -95,6 +95,22 @@ const filters = [
   "Custom Software Development",
   "Ecommerce / Shopify",
 ];
+
+import SEO from "../components/SEO";
+
+const portfolioSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Case Studies — Nexasoft Solutions Portfolio",
+  "url": "https://thenexasoftsolutions.com/case-study",
+  "description": "Browse Nexasoft Solutions' portfolio of ERP systems, CRM platforms, Shopify stores, web design projects, and custom software delivered across industries.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Nexasoft Solutions",
+    "url": "https://thenexasoftsolutions.com"
+  }
+};
+
 const CaseStudiesPage = () => {
   const [activeFilter, setActiveFilter] = useState("All");
 
@@ -105,6 +121,13 @@ const CaseStudiesPage = () => {
 
   return (
     <div className="bg-[#F1F3F5] min-h-screen pt-24 sm:pt-28 md:pt-32 lg:pt-40">
+      <SEO
+        title="Case Studies — Our Portfolio of Software, Web Design & Marketing Projects"
+        description="Browse Nexasoft Solutions' portfolio of delivered projects including ERP systems, CRM platforms, Shopify e-commerce stores, web design, and custom software solutions across industries."
+        canonical="https://thenexasoftsolutions.com/case-study"
+        schema={portfolioSchema}
+      />
+
       {/* HERO */}
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 mb-12 sm:mb-16 md:mb-20">
         <p className="font-body text-[10px] sm:text-xs tracking-[0.25em] mb-6 flex items-center gap-2 text-gray-600">
@@ -160,13 +183,14 @@ const CaseStudiesPage = () => {
                   loop
                   playsInline
                   preload="metadata"
+                  aria-label={`${project.title} — ${project.category}`}
                   className={`w-full h-full object-cover transition-transform duration-[2000ms] ease-linear
               ${project.disableSlide ? "" : "group-hover:scale-105"}`}
                 />
               ) : (
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={`${project.title} — ${project.category} by Nexasoft Solutions`}
                   loading="lazy"
                   className={`w-full h-full object-cover object-top transition-transform duration-[2000ms] ease-linear
               ${project.disableSlide ? "" : "group-hover:-translate-y-[55%]"}`}
@@ -180,9 +204,9 @@ const CaseStudiesPage = () => {
                 {project.category}
               </p>
 
-              <h3 className="font-heading text-base sm:text-lg md:text-xl">
+              <h2 className="font-heading text-base sm:text-lg md:text-xl">
                 {project.title}
-              </h3>
+              </h2>
 
               <div className="mt-3 sm:mt-4 w-10 sm:w-12 h-[2px] bg-[#9C0000]"></div>
             </div>
