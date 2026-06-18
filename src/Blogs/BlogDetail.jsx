@@ -167,9 +167,18 @@ const BlogDetail = () => {
             <div>
               <h3 className="font-bold text-xl text-black mb-2">{blog.author}</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Senior Technical Writer & Strategist at Nexasoft Solutions. Specializing in digital transformation, software architecture, and data-driven marketing strategies to help businesses scale efficiently.
+                {blog.author === "Samiullah Qureshi"
+                  ? "Founder & CEO of Nexasoft Solutions. A visionary entrepreneur and technologist with deep expertise in custom software development, web design, and digital marketing strategy. Samiullah leads Nexasoft's mission to help businesses worldwide build powerful digital products that drive real growth."
+                  : "Senior Technical Writer & Strategist at Nexasoft Solutions. Specializing in digital transformation, software architecture, and data-driven marketing strategies to help businesses scale efficiently."}
               </p>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[#9C0000] text-sm font-semibold hover:underline">
+              <a
+                href={blog.author === "Samiullah Qureshi"
+                  ? "https://pk.linkedin.com/in/samiullah-qureshi-756261318"
+                  : "https://pk.linkedin.com/in/samiullah-qureshi-756261318"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#9C0000] text-sm font-semibold hover:underline"
+              >
                 Connect on LinkedIn →
               </a>
             </div>

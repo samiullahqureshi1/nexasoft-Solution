@@ -265,4 +265,36 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- New Blogs by Samiullah Qureshi -->
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/why-your-business-needs-a-custom-website-in-2026</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/how-to-hire-the-best-software-development-company</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/complete-guide-to-google-ads-for-small-businesses</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/react-vs-wordpress-which-is-better-for-business-websites</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/how-to-build-a-strong-brand-identity-for-your-startup</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
