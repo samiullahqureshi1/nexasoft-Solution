@@ -297,4 +297,36 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Blogs by Samiullah Qureshi — June 2026 (Batch 3) -->
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/best-tech-stack-for-startups-in-2026</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/when-to-redesign-your-website-10-warning-signs</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/mvp-development-guide-for-startup-founders</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/content-marketing-strategy-that-drives-organic-traffic</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thenexasoftsolutions.com/blogs/cybersecurity-essentials-for-small-businesses</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
