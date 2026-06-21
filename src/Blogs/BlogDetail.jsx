@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import blogsData from "../data/blogs";
 import DiscussCTA from "../pages/hero/DiscussCTA";
-import SEO from "../components/SEO";
+import SEO from "../components/SEO"
 
 const BlogDetail = () => {
   const { slug } = useParams();
